@@ -214,7 +214,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
           onChange={(e) => handleInputChange('name', e.target.value)}
           placeholder="What are you selling?"
           className={cn(
-            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500",
+            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500",
             errors.name ? "border-red-500" : "border-gray-300"
           )}
         />
@@ -232,7 +232,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
             value={formData.category}
             onChange={(e) => handleInputChange('category', e.target.value)}
             className={cn(
-              "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500",
+              "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500",
               errors.category ? "border-red-500" : "border-gray-300"
             )}
           >
@@ -251,7 +251,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
           <select
             value={formData.condition}
             onChange={(e) => handleInputChange('condition', e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500"
           >
             {conditions.map(cond => (
               <option key={cond.value} value={cond.value}>{cond.label}</option>
@@ -275,7 +275,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
               onChange={(e) => handleInputChange('price', e.target.value)}
               placeholder="0.00"
               className={cn(
-                "w-full pl-7 pr-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500",
+                "w-full pl-7 pr-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500",
                 errors.price ? "border-red-500" : "border-gray-300"
               )}
             />
@@ -295,7 +295,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
               value={formData.originalPrice.replace('$', '')}
               onChange={(e) => handleInputChange('originalPrice', e.target.value)}
               placeholder="0.00"
-              className="w-full pl-7 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full pl-7 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500"
             />
           </div>
         </div>
@@ -313,7 +313,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
           placeholder="Describe your item (condition, features, reason for selling...)"
           rows={3}
           className={cn(
-            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500",
+            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500",
             errors.description ? "border-red-500" : "border-gray-300"
           )}
         />
@@ -333,7 +333,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
           value={formData.meetupLocation}
           onChange={(e) => handleInputChange('meetupLocation', e.target.value)}
           className={cn(
-            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500",
+            "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500",
             errors.meetupLocation ? "border-red-500" : "border-gray-300"
           )}
         >
@@ -349,7 +349,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
       {isDesktop && (
         <Button 
           type="submit" 
-          className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+          className="w-full bg-maroon-600 hover:bg-maroon-700 text-white"
         >
           Create Listing
         </Button>
@@ -362,7 +362,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           {trigger || (
-            <button className="flex items-center text-sm font-medium text-emerald-600 hover:text-emerald-700">
+            <button className="flex items-center text-sm font-medium text-maroon-600 hover:text-maroon-700">
               <PlusCircleIcon className="h-5 w-5 mr-1" />
               Sell
             </button>
@@ -385,7 +385,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         {trigger || (
-          <button className="flex items-center text-sm font-medium text-emerald-600 hover:text-emerald-700">
+          <button className="flex items-center text-sm font-medium text-maroon-600 hover:text-maroon-700">
             <PlusCircleIcon className="h-5 w-5 mr-1" />
             Sell
           </button>
@@ -405,7 +405,7 @@ export function SellListingDialog({ trigger }: SellListingDialogProps) {
           <Button 
             type="submit" 
             onClick={handleSubmit}
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+            className="w-full bg-maroon-600 hover:bg-maroon-700 text-white"
           >
             Create Listing
           </Button>

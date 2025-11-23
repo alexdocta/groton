@@ -60,7 +60,7 @@ export default function ChatWindow({ thread, position }: ChatWindowProps) {
     >
       <div className={`bg-white rounded-t-lg shadow-2xl border border-gray-200 ${isMinimized ? 'h-14' : 'h-[500px]'} flex flex-col`}>
         {/* Header */}
-        <div className="flex items-center justify-between p-3 border-b bg-emerald-600 text-white rounded-t-lg">
+        <div className="flex items-center justify-between p-3 border-b bg-maroon-600 text-white rounded-t-lg">
           <div className="flex items-center gap-2">
             <div className="relative">
               <Image
@@ -77,20 +77,20 @@ export default function ChatWindow({ thread, position }: ChatWindowProps) {
             <div>
               <div className="font-medium text-sm">{otherUser.name}</div>
               {thread.isTyping && (
-                <div className="text-xs text-emerald-100">typing...</div>
+                <div className="text-xs text-maroon-100">typing...</div>
               )}
             </div>
           </div>
           <div className="flex gap-1">
             <button
               onClick={() => setIsMinimized(!isMinimized)}
-              className="p-1 hover:bg-emerald-700 rounded transition-colors"
+              className="p-1 hover:bg-maroon-700 rounded transition-colors"
             >
               <MinusIcon className="h-4 w-4" />
             </button>
             <button
               onClick={() => closeChat(thread.id)}
-              className="p-1 hover:bg-emerald-700 rounded transition-colors"
+              className="p-1 hover:bg-maroon-700 rounded transition-colors"
             >
               <XMarkIcon className="h-4 w-4" />
             </button>
@@ -145,7 +145,7 @@ export default function ChatWindow({ thread, position }: ChatWindowProps) {
                         <div
                           className={`px-3 py-2 rounded-lg ${
                             isSelf
-                              ? 'bg-emerald-600 text-white'
+                              ? 'bg-maroon-600 text-white'
                               : 'bg-gray-100 text-gray-900'
                           }`}
                         >
@@ -209,12 +209,12 @@ export default function ChatWindow({ thread, position }: ChatWindowProps) {
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyPress={handleKeyPress}
                   placeholder="Type a message..."
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:border-transparent"
                 />
                 <button
                   onClick={handleSend}
                   disabled={!message.trim()}
-                  className="p-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="p-2 bg-maroon-600 text-white rounded-lg hover:bg-maroon-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
                   <PaperAirplaneIcon className="h-5 w-5" />
                 </button>

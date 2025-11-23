@@ -60,10 +60,10 @@ export default function CommunityStats() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-emerald-50 to-teal-50 px-3 py-6 sm:p-8 lg:p-10"
+              className="bg-gradient-to-br from-maroon-50 to-maroon-50 px-3 py-6 sm:p-8 lg:p-10"
             >
               <dt className="text-base font-medium text-gray-600">{stat.name}</dt>
-              <dd className="mt-1 text-4xl font-extrabold tracking-tight text-emerald-600">
+              <dd className="mt-1 text-4xl font-extrabold tracking-tight text-maroon-600">
                 <CountUp 
                   end={stat.value} 
                   duration={2} 
@@ -76,11 +76,11 @@ export default function CommunityStats() {
         </dl>
 
         <div className="mt-6 text-center">
-          <div className="inline-flex items-center gap-3 rounded-full bg-emerald-50 px-6 py-3">
-            <svg className="h-5 w-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+          <div className="inline-flex items-center gap-3 rounded-full bg-maroon-50 px-6 py-3">
+            <svg className="h-5 w-5 text-maroon-600" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm font-medium text-emerald-700">
+            <span className="text-sm font-medium text-maroon-700">
               Growing 20% month over month
             </span>
           </div>

@@ -33,7 +33,7 @@ const steps = [
     name: 'Complete Exchange',
     description: 'Mark as sold, leave a review. Build your reputation in the community.',
     icon: CheckCircleIcon,
-    iconBackground: 'bg-emerald-500',
+    iconBackground: 'bg-maroon-500',
     iconForeground: 'text-white',
   },
 ]
@@ -99,18 +99,18 @@ export default function HowItWorks() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-8 text-center">
  
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-maroon-50 rounded-full">
             <span className="flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-maroon-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-maroon-500"></span>
             </span>
-            <span className="text-sm font-medium text-emerald-700">
+            <span className="text-sm font-medium text-maroon-700">
               247 students active right now
             </span>
           </div>
           
           <div className="mt-6">
-            <button className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-base font-medium text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all hover:scale-105">
+            <button className="inline-flex items-center justify-center rounded-full bg-maroon-600 px-8 py-3 text-base font-medium text-white shadow-lg hover:bg-maroon-700 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-all hover:scale-105">
               Get Started Free
             </button>
           </div>

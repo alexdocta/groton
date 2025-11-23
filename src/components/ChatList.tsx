@@ -73,7 +73,7 @@ export default function ChatList({ isOpen, onClose }: ChatListProps) {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search conversations..."
-                    className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function ChatList({ isOpen, onClose }: ChatListProps) {
                               
                               {isUnread && (
                                 <div className="mt-1">
-                                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-maroon-100 text-maroon-800">
                                     {thread.unreadCount} new
                                   </span>
                                 </div>

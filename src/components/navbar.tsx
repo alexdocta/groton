@@ -159,7 +159,7 @@ export default function Navbar() {
                   whileHover={{ scale: 1.05 }}
                   className="flex items-center"
                 >
-                  <div className="h-8 w-8 bg-emerald-600 rounded-lg flex items-center justify-center mr-2">
+                  <div className="h-8 w-8 bg-maroon-600 rounded-lg flex items-center justify-center mr-2">
                     <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -200,8 +200,8 @@ export default function Navbar() {
                                   <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                     {category.featured.map((item) => (
                                       <div key={item.name} className="group relative text-base sm:text-sm">
-                                        <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-emerald-50 group-hover:opacity-75">
-                                          <div className="h-32 w-full bg-gradient-to-br from-emerald-100 to-teal-100" />
+                                        <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-maroon-50 group-hover:opacity-75">
+                                          <div className="h-32 w-full bg-gradient-to-br from-maroon-100 to-maroon-100" />
                                         </div>
                                         <Link href={item.href} className="mt-6 block font-medium text-gray-900">
                                           <span className="absolute inset-0 z-10" aria-hidden="true" />
@@ -213,7 +213,7 @@ export default function Navbar() {
                                   <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-xl">
                                     {category.categories.map((item) => (
                                       <div key={item.name}>
-                                        <Link href={item.href} className="font-medium text-gray-900 hover:text-emerald-600">
+                                        <Link href={item.href} className="font-medium text-gray-900 hover:text-maroon-600">
                                           {item.name}
                                         </Link>
                                       </div>
@@ -252,7 +252,7 @@ export default function Navbar() {
                 <div className="lg:hidden">
                   <SellListingDialog 
                     trigger={
-                      <button className="p-2 text-emerald-600 hover:text-emerald-700">
+                      <button className="p-2 text-maroon-600 hover:text-maroon-700">
                         <PlusCircleIcon className="h-6 w-6" aria-hidden="true" />
                         <span className="sr-only">Sell</span>
                       </button>

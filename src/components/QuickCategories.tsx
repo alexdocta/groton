@@ -1,12 +1,8 @@
 "use client"
 
-import { 
-  BookOpenIcon, 
-  HomeIcon, 
-  ComputerDesktopIcon, 
-  TrophyIcon,
-  AcademicCapIcon,
-  PaintBrushIcon 
+import {
+  BookOpenIcon,
+  HomeIcon
 } from '@heroicons/react/24/outline'
 import { motion } from 'motion/react'
 import Link from 'next/link'
@@ -29,42 +25,6 @@ const categories = [
     color: 'bg-purple-500',
     lightColor: 'bg-purple-50',
     textColor: 'text-purple-600',
-  },
-  {
-    name: 'Electronics & Tech',
-    description: 'Laptops, calculators, and more',
-    href: '/category/electronics',
-    icon: ComputerDesktopIcon,
-    color: 'bg-indigo-500',
-    lightColor: 'bg-indigo-50',
-    textColor: 'text-indigo-600',
-  },
-  {
-    name: 'Sports & Recreation',
-    description: 'Gear for every season',
-    href: '/category/sports',
-    icon: TrophyIcon,
-    color: 'bg-orange-500',
-    lightColor: 'bg-orange-50',
-    textColor: 'text-orange-600',
-  },
-  {
-    name: 'School Uniforms & Apparel',
-    description: 'Dress code essentials',
-    href: '/category/uniforms',
-    icon: AcademicCapIcon,
-    color: 'bg-emerald-500',
-    lightColor: 'bg-emerald-50',
-    textColor: 'text-emerald-600',
-  },
-  {
-    name: 'Art & Music Supplies',
-    description: 'Creative tools and instruments',
-    href: '/category/arts',
-    icon: PaintBrushIcon,
-    color: 'bg-pink-500',
-    lightColor: 'bg-pink-50',
-    textColor: 'text-pink-600',
   },
 ]
 
@@ -117,7 +77,7 @@ export default function QuickCategories() {
         <div className="mt-4 text-center">
           <Link
             href="/categories"
-            className="inline-flex items-center text-sm font-medium text-emerald-600 hover:text-emerald-700"
+            className="inline-flex items-center text-sm font-medium text-maroon-600 hover:text-maroon-700"
           >
             View all categories
             <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

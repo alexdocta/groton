@@ -1,10 +1,9 @@
 "use client"
 
-import { 
-  AcademicCapIcon, 
-  UserGroupIcon, 
+import {
+  AcademicCapIcon,
+  UserGroupIcon,
   SunIcon,
-  SparklesIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline'
 import { motion } from 'motion/react'
@@ -45,22 +44,9 @@ const services = [
 
 export default function CampusServices() {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 py-4 sm:py-6">
+    <div className="bg-gradient-to-b from-white to-gray-50 py-4 sm:py-6 zebra-pattern">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-2 mb-1">
-            <SparklesIcon className="h-5 w-5 text-emerald-600" />
-            <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">New</span>
-          </div>
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-            More Than a Marketplace
-          </h2>
-          <p className="mt-1 text-sm text-gray-600 sm:text-base">
-            Access exclusive Groton resources and opportunities
-          </p>
-        </div>
-
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
           {services.map((service, index) => (
             <motion.div
               key={service.name}

@@ -148,7 +148,7 @@ export default function ProfilePage() {
                 />
                 {user.verified && (
                   <div className="absolute bottom-2 right-2 bg-white rounded-full p-1">
-                    <CheckBadgeIcon className="h-6 w-6 text-emerald-600" />
+                    <CheckBadgeIcon className="h-6 w-6 text-maroon-600" />
                   </div>
                 )}
               </div>
@@ -170,7 +170,7 @@ export default function ProfilePage() {
                   <div className="flex gap-2">
                     <button
                       onClick={handleMessage}
-                      className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors relative"
+                      className="inline-flex items-center px-4 py-2 bg-maroon-600 text-white rounded-lg hover:bg-maroon-700 transition-colors relative"
                     >
                       <ChatBubbleLeftRightIcon className="h-5 w-5 mr-2" />
                       {isOwnProfile ? 'My Chats' : 'Message'}
@@ -227,7 +227,7 @@ export default function ProfilePage() {
                   onClick={() => setActiveTab('listings')}
                   className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                     activeTab === 'listings'
-                      ? 'border-emerald-600 text-emerald-600'
+                      ? 'border-maroon-600 text-maroon-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                   }`}
                 >
@@ -237,7 +237,7 @@ export default function ProfilePage() {
                   onClick={() => setActiveTab('reviews')}
                   className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                     activeTab === 'reviews'
-                      ? 'border-emerald-600 text-emerald-600'
+                      ? 'border-maroon-600 text-maroon-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                   }`}
                 >
@@ -247,7 +247,7 @@ export default function ProfilePage() {
                   onClick={() => setActiveTab('about')}
                   className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                     activeTab === 'about'
-                      ? 'border-emerald-600 text-emerald-600'
+                      ? 'border-maroon-600 text-maroon-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                   }`}
                 >
@@ -317,7 +317,7 @@ export default function ProfilePage() {
                       
                       <div className="mt-3">
                         <h3 
-                          className="text-sm font-medium text-gray-900 cursor-pointer hover:text-emerald-600"
+                          className="text-sm font-medium text-gray-900 cursor-pointer hover:text-maroon-600"
                           onClick={() => handleQuickView(product)}
                         >
                           {product.name}
@@ -416,7 +416,7 @@ export default function ProfilePage() {
                       {['Textbooks', 'Dorm Essentials', 'Electronics', 'School Supplies'].map(category => (
                         <span
                           key={category}
-                          className="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm"
+                          className="px-3 py-1 bg-maroon-50 text-maroon-700 rounded-full text-sm"
                         >
                           {category}
                         </span>

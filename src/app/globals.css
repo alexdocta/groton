@@ -41,6 +41,19 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Groton Maroon Color Palette */
+  --color-maroon-50: #fdf2f5;
+  --color-maroon-100: #fce7ed;
+  --color-maroon-200: #facfd9;
+  --color-maroon-300: #f5a3ba;
+  --color-maroon-400: #ee7095;
+  --color-maroon-500: #e23d6f;
+  --color-maroon-600: #ae0940;
+  --color-maroon-700: #8b0733;
+  --color-maroon-800: #6e052a;
+  --color-maroon-900: #570423;
+  --color-maroon-950: #2f0113;
 }
 
 :root {
@@ -119,4 +132,25 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Zebra Stripe Pattern */
+.zebra-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(174, 9, 64, 0.03) 10px,
+    rgba(174, 9, 64, 0.03) 20px
+  );
+}
+
+.zebra-pattern-dark {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 15px,
+    rgba(174, 9, 64, 0.05) 15px,
+    rgba(174, 9, 64, 0.05) 30px
+  );
 }

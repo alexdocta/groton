@@ -39,7 +39,7 @@ export default function NotificationToast() {
     switch (type) {
       case 'message':
       case 'response':
-        return <ChatBubbleLeftRightIcon className="h-5 w-5 text-emerald-600" />
+        return <ChatBubbleLeftRightIcon className="h-5 w-5 text-maroon-600" />
       case 'sold':
         return <CheckCircleIcon className="h-5 w-5 text-green-600" />
       case 'price_drop':
@@ -109,7 +109,7 @@ export default function NotificationToast() {
               
               {notification.type === 'message' && (
                 <div className="mt-3 pt-3 border-t">
-                  <span className="text-xs text-emerald-600 font-medium">
+                  <span className="text-xs text-maroon-600 font-medium">
                     Click to open chat →
                   </span>
                 </div>

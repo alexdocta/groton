@@ -86,9 +86,9 @@ const categoryConfig: Record<string, {
     name: 'School Uniforms & Apparel',
     description: 'Dress code essentials and school spirit wear',
     icon: AcademicCapIcon,
-    color: 'bg-emerald-500',
-    lightColor: 'bg-emerald-50',
-    textColor: 'text-emerald-600',
+    color: 'bg-maroon-500',
+    lightColor: 'bg-maroon-50',
+    textColor: 'text-maroon-600',
     subcategories: [
       { name: 'Blazers', href: '/category/uniforms?filter=blazers' },
       { name: 'Shirts & Ties', href: '/category/uniforms?filter=shirts' },
@@ -124,7 +124,7 @@ export default function CategoryPage() {
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Category not found</h1>
           <Link 
             href="/"
-            className="text-emerald-600 hover:text-emerald-700 font-medium"
+            className="text-maroon-600 hover:text-maroon-700 font-medium"
           >
             Return to homepage
           </Link>
@@ -232,7 +232,7 @@ export default function CategoryPage() {
               </button>
               <div className="flex items-center gap-2">
                 <span className="text-sm text-gray-500">Condition:</span>
-                <select className="rounded-lg border-gray-300 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                <select className="rounded-lg border-gray-300 text-sm focus:border-maroon-500 focus:ring-maroon-500">
                   <option>All</option>
                   <option>Like New</option>
                   <option>Good</option>
@@ -241,7 +241,7 @@ export default function CategoryPage() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sm text-gray-500">Price:</span>
-                <select className="rounded-lg border-gray-300 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                <select className="rounded-lg border-gray-300 text-sm focus:border-maroon-500 focus:ring-maroon-500">
                   <option>All</option>
                   <option>Under $25</option>
                   <option>$25 - $50</option>
@@ -252,7 +252,7 @@ export default function CategoryPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-sm text-gray-500">Sort by:</span>
-              <select className="rounded-lg border-gray-300 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+              <select className="rounded-lg border-gray-300 text-sm focus:border-maroon-500 focus:ring-maroon-500">
                 <option>Newest First</option>
                 <option>Price: Low to High</option>
                 <option>Price: High to Low</option>

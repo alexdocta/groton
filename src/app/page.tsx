@@ -28,10 +28,10 @@ export default function Home() {
       <Hero />
       <QuickCategories />
       <CampusServices />
-      <ProductList />
       <NewArrivals />
       <Incentive />
       <HowItWorks />
+      <ProductList />
       
       {/* Popular Items Marquee */}
       <section className="py-4 bg-gray-50">

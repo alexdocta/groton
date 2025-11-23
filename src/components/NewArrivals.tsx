@@ -197,7 +197,7 @@ export default function NewArrivals({
             {showViewAll && (
               <Link
                 href="/new"
-                className="hidden sm:block text-sm font-medium text-emerald-600 hover:text-emerald-700"
+                className="hidden sm:block text-sm font-medium text-maroon-600 hover:text-maroon-700"
               >
                 View all
                 <span aria-hidden="true"> &rarr;</span>
@@ -231,7 +231,7 @@ export default function NewArrivals({
                     <div className="absolute top-2 left-2">
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium ${
                         product.badge === 'Hot Deal' ? 'bg-red-100 text-red-800' :
-                        product.badge === 'Top Rated' ? 'bg-emerald-100 text-emerald-800' :
+                        product.badge === 'Top Rated' ? 'bg-maroon-100 text-maroon-800' :
                         product.badge === 'New' ? 'bg-blue-100 text-blue-800' :
                         'bg-purple-100 text-purple-800'
                       }`}>
@@ -248,7 +248,7 @@ export default function NewArrivals({
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <h3 
-                        className="text-xs sm:text-sm font-medium text-gray-900 cursor-pointer hover:text-emerald-600 line-clamp-2"
+                        className="text-xs sm:text-sm font-medium text-gray-900 cursor-pointer hover:text-maroon-600 line-clamp-2"
                         onClick={() => handleQuickView(product)}
                       >
                         {product.name}
@@ -270,7 +270,7 @@ export default function NewArrivals({
                     <span>by </span>
                     <Link 
                       href={`/profile/${product.sellerId}`} 
-                      className="hover:text-emerald-600 hover:underline"
+                      className="hover:text-maroon-600 hover:underline"
                     >
                       {product.seller}
                     </Link>
@@ -279,7 +279,7 @@ export default function NewArrivals({
                   <div className="mt-2">
                     <p className="text-sm sm:text-lg font-semibold text-gray-900">{product.price}</p>
                     <p className="text-xs sm:text-sm text-gray-500 line-through">{product.originalPrice}</p>
-                    <span className="text-xs font-medium text-emerald-600">
+                    <span className="text-xs font-medium text-maroon-600">
                       Save {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
                     </span>
                   </div>
@@ -289,7 +289,7 @@ export default function NewArrivals({
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => handleMessageSeller(product)}
-                      className="w-full inline-flex items-center justify-center rounded-lg bg-emerald-600 px-2 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors"
+                      className="w-full inline-flex items-center justify-center rounded-lg bg-maroon-600 px-2 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm font-medium text-white shadow-sm hover:bg-maroon-700 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-colors"
                     >
                       <ChatBubbleLeftRightIcon className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       <span className="hidden sm:inline">Message Seller</span>
@@ -305,7 +305,7 @@ export default function NewArrivals({
             <div className="mt-6 text-center sm:hidden">
               <Link
                 href="/new"
-                className="text-sm font-medium text-emerald-600 hover:text-emerald-700"
+                className="text-sm font-medium text-maroon-600 hover:text-maroon-700"
               >
                 View all new arrivals
                 <span aria-hidden="true"> &rarr;</span>

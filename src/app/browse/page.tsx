@@ -447,7 +447,7 @@ export default function BrowsePage() {
                 <button
                   type="button"
                   onClick={() => setMobileFiltersOpen(false)}
-                  className="relative -mr-2 flex size-10 items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-emerald-500 focus:outline-hidden"
+                  className="relative -mr-2 flex size-10 items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-maroon-500 focus:outline-hidden"
                 >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Close menu</span>
@@ -484,7 +484,7 @@ export default function BrowsePage() {
                                       name={`${section.id}[]`}
                                       type="checkbox"
                                       onChange={(e) => handleFilterChange(section.id, option.value, e.target.checked)}
-                                      className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-emerald-600 checked:bg-emerald-600 indeterminate:border-emerald-600 indeterminate:bg-emerald-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                      className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-maroon-600 checked:bg-maroon-600 indeterminate:border-maroon-600 indeterminate:bg-maroon-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-maroon-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                     />
                                     <svg
                                       fill="none"
@@ -536,7 +536,7 @@ export default function BrowsePage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search for textbooks, electronics, dorm essentials..."
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 pl-10 text-sm placeholder-gray-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 pl-10 text-sm placeholder-gray-500 focus:border-maroon-500 focus:outline-none focus:ring-1 focus:ring-maroon-500"
                 />
                 <MagnifyingGlassIcon className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
               </div>
@@ -554,12 +554,12 @@ export default function BrowsePage() {
                       return (
                         <span
                           key={`${filterId}-${value}`}
-                          className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-sm text-emerald-700"
+                          className="inline-flex items-center gap-1 rounded-full bg-maroon-50 px-3 py-1 text-sm text-maroon-700"
                         >
                           {option?.label}
                           <button
                             onClick={() => handleFilterChange(filterId, value, false)}
-                            className="ml-1 hover:text-emerald-900"
+                            className="ml-1 hover:text-maroon-900"
                           >
                             <XMarkIcon className="h-3 w-3" />
                           </button>
@@ -592,7 +592,7 @@ export default function BrowsePage() {
                 <span className="text-sm font-medium text-gray-700">Filters</span>
                 <FunnelIcon aria-hidden="true" className="ml-1 size-5 shrink-0 text-gray-400" />
                 {activeFiltersCount > 0 && (
-                  <span className="ml-2 rounded-full bg-emerald-600 px-2 py-0.5 text-xs text-white">
+                  <span className="ml-2 rounded-full bg-maroon-600 px-2 py-0.5 text-xs text-white">
                     {activeFiltersCount}
                   </span>
                 )}
@@ -617,7 +617,7 @@ export default function BrowsePage() {
                                       name={`${section.id}[]`}
                                       type="checkbox"
                                       onChange={(e) => handleFilterChange(section.id, option.value, e.target.checked)}
-                                      className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-emerald-600 checked:bg-emerald-600 indeterminate:border-emerald-600 indeterminate:bg-emerald-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                      className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-maroon-600 checked:bg-maroon-600 indeterminate:border-maroon-600 indeterminate:bg-maroon-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-maroon-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                     />
                                     <svg
                                       fill="none"
@@ -650,12 +650,12 @@ export default function BrowsePage() {
                 </form>
 
                 {/* Create Alert */}
-                <div className="mt-10 rounded-lg bg-emerald-50 p-4">
-                  <h3 className="text-sm font-medium text-emerald-900">Can't find what you need?</h3>
-                  <p className="mt-1 text-sm text-emerald-700">
+                <div className="mt-10 rounded-lg bg-maroon-50 p-4">
+                  <h3 className="text-sm font-medium text-maroon-900">Can't find what you need?</h3>
+                  <p className="mt-1 text-sm text-maroon-700">
                     Create an alert and we'll notify you when it's posted.
                   </p>
-                  <button className="mt-3 text-sm font-medium text-emerald-600 hover:text-emerald-700">
+                  <button className="mt-3 text-sm font-medium text-maroon-600 hover:text-maroon-700">
                     Create alert →
                   </button>
                 </div>
@@ -679,7 +679,7 @@ export default function BrowsePage() {
                     id="sort"
                     value={selectedSort.value}
                     onChange={(e) => setSelectedSort(sortOptions.find(o => o.value === e.target.value) || sortOptions[0])}
-                    className="rounded-md border border-gray-300 px-3 py-1.5 text-sm text-gray-700 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                    className="rounded-md border border-gray-300 px-3 py-1.5 text-sm text-gray-700 focus:border-maroon-500 focus:outline-none focus:ring-1 focus:ring-maroon-500"
                   >
                     {sortOptions.map(option => (
                       <option key={option.value} value={option.value}>
@@ -727,7 +727,7 @@ export default function BrowsePage() {
                           <span className={`inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium ${
                             product.isUserListing ? 'bg-purple-100 text-purple-800' :
                             product.badge === 'Hot Deal' ? 'bg-red-100 text-red-800' :
-                            product.badge === 'Top Rated' ? 'bg-emerald-100 text-emerald-800' :
+                            product.badge === 'Top Rated' ? 'bg-maroon-100 text-maroon-800' :
                             product.badge === 'New' ? 'bg-blue-100 text-blue-800' :
                             'bg-purple-100 text-purple-800'
                           }`}>
@@ -747,7 +747,7 @@ export default function BrowsePage() {
                     
                     <div className="flex flex-1 flex-col p-4">
                       <h3 
-                        className="text-sm font-medium text-gray-900 cursor-pointer hover:text-emerald-600"
+                        className="text-sm font-medium text-gray-900 cursor-pointer hover:text-maroon-600"
                         onClick={() => handleQuickView(product)}
                       >
                         {product.name}
@@ -764,7 +764,7 @@ export default function BrowsePage() {
                       </div>
                       
                       <div className="mt-2 text-xs text-gray-500">
-                        by <Link href={`/profile/${product.sellerId}`} className="hover:text-emerald-600 hover:underline">{product.seller}</Link> • {product.postedDate}
+                        by <Link href={`/profile/${product.sellerId}`} className="hover:text-maroon-600 hover:underline">{product.seller}</Link> • {product.postedDate}
                       </div>
                       
                       <div className="mt-auto pt-4">
@@ -777,7 +777,7 @@ export default function BrowsePage() {
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                           onClick={() => handleMessageSeller(product)}
-                          className="mt-3 w-full inline-flex items-center justify-center rounded-lg bg-emerald-600 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-colors"
+                          className="mt-3 w-full inline-flex items-center justify-center rounded-lg bg-maroon-600 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-maroon-700 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-colors"
                         >
                           <ChatBubbleLeftRightIcon className="h-4 w-4 mr-2" />
                           Message Seller
@@ -791,7 +791,7 @@ export default function BrowsePage() {
 
               {/* Load More */}
               <div className="mt-8 text-center">
-                <button className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+                <button className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2">
                   Load more listings
                 </button>
               </div>
