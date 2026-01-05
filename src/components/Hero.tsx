@@ -3,6 +3,7 @@
 import { ArrowRightIcon, ShieldCheckIcon, TruckIcon, ClockIcon } from '@heroicons/react/24/outline'
 import { motion } from 'motion/react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -15,6 +16,13 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          {/* School Logo */}
+          <div className="flex justify-center mb-6">
+            <div className="bg-white rounded-xl p-2 shadow-lg">
+              <Image src="/logo.png" alt="COED" width={80} height={80} className="object-contain" />
+            </div>
+          </div>
+
           <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">
             The Trusted Marketplace for{' '}
             <span className="relative whitespace-nowrap text-maroon-600">
@@ -42,6 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 flex flex-col sm:flex-row justify-center gap-4"
         >
+          {/* Hidden for MVP - Start Selling button
           <Link
             href="/sell"
             className="inline-flex items-center justify-center rounded-full bg-maroon-600 px-8 py-3 text-base font-medium text-white shadow-lg hover:bg-maroon-700 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-all hover:scale-105"
@@ -49,6 +58,7 @@ export default function Hero() {
             Start Selling
             <ArrowRightIcon className="ml-2 h-5 w-5" />
           </Link>
+          */}
           <Link
             href="/browse"
             className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-medium text-maroon-600 shadow-lg ring-1 ring-maroon-100 hover:bg-maroon-50 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-all hover:scale-105"
@@ -57,6 +67,7 @@ export default function Hero() {
           </Link>
         </motion.div>
 
+        {/* Hidden for MVP - Trust badges
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -76,6 +87,7 @@ export default function Hero() {
             <span className="font-medium">Quick Campus Meetups</span>
           </div>
         </motion.div>
+        */}
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -86,20 +98,11 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent z-10 pointer-events-none" />
           <div className="bg-white rounded-2xl shadow-2xl p-2 border border-slate-200">
             <div className="bg-gradient-to-br from-maroon-50 to-maroon-100 rounded-xl p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-maroon-600">2,847</div>
-                  <div className="text-sm text-slate-600 mt-1">Active Listings</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-maroon-600">$45,230</div>
-                  <div className="text-sm text-slate-600 mt-1">Saved This Semester</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-maroon-600">1,523</div>
-                  <div className="text-sm text-slate-600 mt-1">Happy Students</div>
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold text-maroon-600 mb-4">Why CampusSwap?</h3>
+              <p className="text-slate-700 text-lg">
+                Your one-stop marketplace for textbooks, study materials, and dorm essentials.
+                Built by students, for students.
+              </p>
             </div>
           </div>
         </motion.div>

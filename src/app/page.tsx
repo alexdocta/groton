@@ -27,7 +27,9 @@ export default function Home() {
     <>
       <Hero />
       <QuickCategories />
+      {/* Hidden for MVP - CampusServices (Peer Tutoring, Alumni Connect, Summer Programs)
       <CampusServices />
+      */}
       <NewArrivals />
       <Incentive />
       <HowItWorks />
@@ -49,8 +51,12 @@ export default function Home() {
         </ScrollVelocityContainer>
       </section>
       
+      {/* Hidden for MVP - CommunityStats (Trusted by students across campus)
       <CommunityStats />
+      */}
+      {/* Hidden for MVP - Newsletter (Never miss a deal)
       <Newsletter />
+      */}
     </>
   )
 }

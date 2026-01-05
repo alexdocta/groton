@@ -92,13 +92,13 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* CTA Section */}
+        {/* Hidden for MVP - CTA Section
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-8 text-center">
- 
+
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-maroon-50 rounded-full">
             <span className="flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-maroon-400 opacity-75"></span>
@@ -108,13 +108,14 @@ export default function HowItWorks() {
               247 students active right now
             </span>
           </div>
-          
+
           <div className="mt-6">
             <button className="inline-flex items-center justify-center rounded-full bg-maroon-600 px-8 py-3 text-base font-medium text-white shadow-lg hover:bg-maroon-700 focus:outline-none focus:ring-2 focus:ring-maroon-500 focus:ring-offset-2 transition-all hover:scale-105">
               Get Started Free
             </button>
           </div>
         </motion.div>
+        */}
       </div>
     </div>
   )

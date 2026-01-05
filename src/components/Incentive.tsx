@@ -1,6 +1,6 @@
 "use client"
 
-import { ShieldCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { CurrencyDollarIcon, UserGroupIcon, SquaresPlusIcon } from '@heroicons/react/24/outline'
 import { motion } from 'motion/react'
 
 const incentives = [
@@ -10,9 +10,14 @@ const incentives = [
     icon: UserGroupIcon,
   },
   {
-    name: 'Safe Exchange Zones',
-    description: 'Meet in designated campus safe zones. Security cameras and public locations for peace of mind.',
-    icon: ShieldCheckIcon,
+    name: 'Reduce Costs',
+    description: 'Save money by buying gently used items instead of brand new. The smart way to shop on campus.',
+    icon: CurrencyDollarIcon,
+  },
+  {
+    name: 'Focused Hub',
+    description: 'Everything you need in one place - textbooks, study materials, and dorm essentials.',
+    icon: SquaresPlusIcon,
   },
 ]
 
@@ -57,6 +62,7 @@ export default function Incentive() {
           </div>
         </div>
 
+        {/* Hidden for MVP - Join students CTA
         <div className="mt-8 bg-gradient-to-r from-maroon-50 to-teal-50 rounded-2xl p-4 sm:p-6 text-center">
           <div className="mx-auto max-w-2xl">
             <h3 className="text-2xl font-bold text-gray-900">Join 1,500+ students already saving</h3>
@@ -73,6 +79,7 @@ export default function Incentive() {
             </div>
           </div>
         </div>
+        */}
       </div>
     </div>
   )
